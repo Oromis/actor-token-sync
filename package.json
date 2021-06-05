@@ -1,6 +1,6 @@
 {
   "name": "actor-token-sync",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Synchronizes Actors and their (Prototype) Tokens. Makes sure Name and Image stay in Sync.",
   "main": "src/actor-token-sync.js",
   "scripts": {
