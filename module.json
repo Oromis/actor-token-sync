@@ -1,0 +1,31 @@
+{
+  "name": "actor-token-sync",
+  "title": "Actor-Token-Sync",
+  "description": "Synchronizes Actors and their (Prototype) Tokens. Makes sure Name and Image stay in Sync.",
+  "author": "Oromis | David <david.bauske@googlemail.com>",
+  "authors": [],
+  "url": "https://github.com/Oromis/actor-token-sync",
+  "license": "https://www.gnu.org/licenses/gpl-3.0.en.html",
+  "readme": "README.md",
+  "bugs": "https://github.com/Oromis/actor-token-sync/issues",
+  "flags": {},
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.8.5",
+  "compatibleCoreVersion": "0.8.6",
+  "scripts": [],
+  "esmodules": [
+    "foundry-combat-focus.js"
+  ],
+  "styles": [
+    "foundry-combat-focus.css"
+  ],
+  "languages": [],
+  "packs": [],
+  "system": [],
+  "dependencies": [],
+  "socket": false,
+  "manifest": "https://raw.githubusercontent.com/Oromis/actor-token-sync/main/module.json",
+  "download": "https://github.com/Oromis/actor-token-sync/releases/download/v1.0.0/actor-token-sync-v1.0.0.zip",
+  "protected": false,
+  "coreTranslation": false
+}

@@ -1,0 +1,24 @@
+{
+  "name": "actor-token-sync",
+  "version": "1.0.0",
+  "description": "Synchronizes Actors and their (Prototype) Tokens. Makes sure Name and Image stay in Sync.",
+  "main": "actor-token-sync.js",
+  "scripts": {
+    "version": "node automation/release.js && git add module.json",
+    "postversion": "git push && git push --tags",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Oromis/actor-token-sync.git"
+  },
+  "keywords": [
+    "FoundryVTT"
+  ],
+  "author": "David Bauske <david.bauske@googlemail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Oromis/actor-token-sync/issues"
+  },
+  "homepage": "https://github.com/Oromis/actor-token-sync#readme"
+}
