@@ -40,7 +40,7 @@ function addImageHtml(sheetHtml, actorSheet) {
   const actorImageElement = sheetHtml.find('.sheet-header .profile')
   const toolbar = $(`<div class="actor-token-sync__toolbar"></div>`)
 
-  if (actorImage !== tokenImage) {
+  if (actorImage !== tokenImage && !actor.data?.token?.randomImg) {
     const tokenImageElement = $(`<img alt="Token" src="${tokenImage}" class="actor-token-sync__image actor-token-sync__token-image profile" title="Token image" />`)
     tokenImageElement.on('click', event => {
       actorSheet._onConfigureToken(event)
