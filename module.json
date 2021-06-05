@@ -14,10 +14,10 @@
   "compatibleCoreVersion": "0.8.6",
   "scripts": [],
   "esmodules": [
-    "foundry-combat-focus.js"
+    "dist/actor-token-sync.js"
   ],
   "styles": [
-    "foundry-combat-focus.css"
+    "dist/actor-token-sync.css"
   ],
   "languages": [],
   "packs": [],

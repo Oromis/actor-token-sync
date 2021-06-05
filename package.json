@@ -2,8 +2,10 @@
   "name": "actor-token-sync",
   "version": "1.0.0",
   "description": "Synchronizes Actors and their (Prototype) Tokens. Makes sure Name and Image stay in Sync.",
-  "main": "actor-token-sync.js",
+  "main": "src/actor-token-sync.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js --mode production",
+    "dev": "webpack --config webpack.config.js --watch --mode development --devtool inline-cheap-module-source-map",
     "version": "node automation/release.js && git add module.json",
     "postversion": "git push && git push --tags",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/Oromis/actor-token-sync/issues"
   },
-  "homepage": "https://github.com/Oromis/actor-token-sync#readme"
+  "homepage": "https://github.com/Oromis/actor-token-sync#readme",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "mini-css-extract-plugin": "^1.6.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
 }

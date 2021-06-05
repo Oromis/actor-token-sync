@@ -1,0 +1,46 @@
+.actor-token-sync__token-image {
+    position: absolute;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+}
+
+.actor-token-sync--split-actor-image {
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+    position: relative;
+    z-index: 1;
+}
+
+.actor-token-sync__image {
+    transition: clip-path 0.3s;
+    cursor: pointer;
+}
+
+.actor-token-sync__image:hover {
+    z-index: 2;
+}
+
+.actor-token-sync--split-actor-image:hover,
+.actor-token-sync__token-image:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.dnd5e.sheet.actor .sheet-header {
+    position: relative;
+}
+
+.actor-token-sync__toolbar {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.actor-token-sync__tiny-btn.active {
+    text-shadow: 0 0 8px red;
+}
