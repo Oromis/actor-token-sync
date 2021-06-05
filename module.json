@@ -9,7 +9,7 @@
   "readme": "README.md",
   "bugs": "https://github.com/Oromis/actor-token-sync/issues",
   "flags": {},
-  "version": "1.0.0",
+  "version": "0.9.0",
   "minimumCoreVersion": "0.8.5",
   "compatibleCoreVersion": "0.8.6",
   "scripts": [],
