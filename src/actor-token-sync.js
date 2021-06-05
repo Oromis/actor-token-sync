@@ -41,12 +41,18 @@ function addImageHtml(sheetHtml, actorSheet) {
   const toolbar = $(`<div class="actor-token-sync__toolbar"></div>`)
 
   if (actorImage !== tokenImage && !actor.data?.token?.randomImg) {
-    const tokenImageElement = $(`<img alt="Token" src="${tokenImage}" class="actor-token-sync__image actor-token-sync__token-image profile" title="Token image" />`)
+    const tokenImageElement = $(`
+        <div class="actor-token-sync__token-image-container">
+          <div class="window-content actor-token-sync__image actor-token-sync__token-image">
+            <img alt="Token" src="${tokenImage}" title="Token image" />
+          </div>
+        </div>
+    `)
     tokenImageElement.on('click', event => {
       actorSheet._onConfigureToken(event)
     })
 
-    actorImageElement.addClass('actor-token-sync__image actor-token-sync--split-actor-image')
+    actorImageElement.addClass('actor-token-sync__image actor-token-sync__actor-image')
     actorImageElement.after(tokenImageElement)
 
     const syncButton = $(`<a class="actor-token-sync__tiny-btn" title="Sync Images"><i class="fas fa-sync"></i></a>`)

@@ -1,30 +1,53 @@
-.actor-token-sync__token-image {
+.actor-token-sync__token-image-container {
     position: absolute;
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
     left: 0;
     top: 50%;
-    transform: translate(0, -50%);
-    z-index: 1;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 158px;
+    height: 158px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    pointer-events: none;
 }
 
-.actor-token-sync--split-actor-image {
-    clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
-    position: relative;
-    z-index: 1;
+.actor-token-sync__token-image {
+    border: 2px groove #eeede0;
+    backface-visibility: hidden;
+    pointer-events: all;
+}
+
+.sheet header.sheet-header .actor-token-sync__token-image img {
+    object-fit: contain;
+    border: none;
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+    margin-right: 0;
+    backface-visibility: hidden;
+    transition: all 0.3s;
 }
 
 .actor-token-sync__image {
-    transition: clip-path 0.3s;
+    transition: transform 0.3s;
     cursor: pointer;
 }
 
-.actor-token-sync__image:hover {
-    z-index: 2;
+.actor-token-sync__actor-image {
+    cursor: pointer;
 }
 
-.actor-token-sync--split-actor-image:hover,
-.actor-token-sync__token-image:hover {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+.sheet header.sheet-header .actor-token-sync__actor-image:hover ~ .actor-token-sync__token-image-container .actor-token-sync__token-image img {
+    width: 16px;
+    height: 16px;
+    flex-basis: 16px;
+}
+
+.sheet header.sheet-header .actor-token-sync__token-image:hover img {
+    width: 144px;
+    height: 144px;
+    flex-basis: 144px;
 }
 
 .dnd5e.sheet.actor .sheet-header {
@@ -35,7 +58,7 @@
     position: absolute;
     bottom: 4px;
     left: 4px;
-    z-index: 3;
+    z-index: 4;
     display: flex;
     flex-direction: row;
     gap: 8px;

@@ -22,6 +22,7 @@ Foundry VTT module that synchronizes Actors and their (Prototype) Tokens. Makes 
     
 ## Changelog
 
+- **1.1.0:** Fixed UI breaking when wildcard tokens are used. Changed split view to a more conventional PiP-View
 - **1.0.0:** Initial release with prototype token name sync and manual image sync for DnD5e
 
 ## About
