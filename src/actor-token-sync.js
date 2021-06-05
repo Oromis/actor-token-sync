@@ -56,8 +56,9 @@ function addImageHtml(sheetHtml, actorSheet) {
     actorImageElement.after(tokenImageElement)
 
     const syncButton = $(`<a class="actor-token-sync__tiny-btn" title="Sync Images"><i class="fas fa-sync"></i></a>`)
-    syncButton.on('click', () => {
-      actor.update({ token: { img: actorImage } })
+    syncButton.on('click', async () => {
+      await actor.update({ token: { img: actorImage } })
+      actorSheet.render()
     })
     toolbar.append(syncButton)
   }
